@@ -22,3 +22,5 @@ To increase the version number, just tag the repository
 Then, rebuild
 
     make
+
+![Dirty Tree](/images/dirty-tree.png)
