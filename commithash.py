@@ -42,7 +42,7 @@ out, err = proc.communicate()
 
 # If the git command exited successfully, then output the commithash.h file.
 if proc.returncode == 0:
-    commit_hash = out.strip()
+    commit_hash = out.strip().decode('utf-8')
 
     if "*" in commit_hash:
         print("\x1b[41mWarning: working tree is dirty!\x1b[0m")
