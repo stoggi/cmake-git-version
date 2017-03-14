@@ -1,0 +1,11 @@
+#include "commithash.h"
+
+const tVersion version = {{
+    .major = {major},
+    .minor = {minor},
+    .patch = {patch},
+    .commits = {commits},
+    .dirty = {dirty:d},
+    .hash = "{hash:.7}",
+    .string = "{major:.5}.{minor:.5}.{patch:.5}.{commits:.5}"
+}};
